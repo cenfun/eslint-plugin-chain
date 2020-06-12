@@ -10,6 +10,9 @@
   },
   "homepage": "https://github.com/cenfun/eslint-plugin-chain#readme",
   "dependencies": {
-    "flatdep": "^1.1.2"
+    "eslint-module-utils": "^2.6.0",
+    "flatdep": "^1.1.2",
+    "is-builtin-module": "^3.0.0",
+    "json5": "^2.1.3"
   }
 }
