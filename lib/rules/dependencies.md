@@ -66,7 +66,7 @@ my-project
 └ package.json
 ```
 
-my-project package.json
+my-project/package.json
 ```json
 {
   "name": "my-project",
@@ -81,7 +81,7 @@ my-project package.json
   }
 }
 ```
-module-core package.json
+module-core/package.json
 ```json
 {
   "name": "module-core",
@@ -94,7 +94,7 @@ module-core package.json
   }
 }
 ```
-module-a package.json
+module-a/package.json
 ```json
 {
   "name": "module-a",
@@ -108,7 +108,7 @@ module-a package.json
 }
 ```
 
-- ## noSelfPackage
+- ## noSelfPackage: true
 ```js
 //module-core/test/test.js
 import Core from 'module-core'; // X Failed
@@ -118,17 +118,19 @@ import Core from '../src/'; // ✔ Passed
 import Core from 'module-core'; // ✔ Passed
 ```
 
-- ## noUppercase
+- ## noUppercase: true
 ```js
 //module-core/src/index.js
 import File from './Uppercase-File.js'; // X Failed
 import File from './lowercase-file.js'; // ✔ Passed
 ```
 
-- ## noUnlisted
+- ## noUnlisted: true
 ```js
 //module-core/src/index.js
 import Vue from 'vue'; // ✔ Passed
+import Vue from 'vue/dist/vue.esm'; // ✔ Passed
+import Vuex from 'vuex'; // X Failed
 
 //module-a/src/index.js
 import axios from 'axios'; // X Failed
@@ -137,7 +139,7 @@ import Core from 'module-core'; // ✔ Passed
 import Vue from 'vue'; // ✔ Passed, vue listed in module-core
 ```
 
-- ## noDevDependenciesDir `["**/src/**"]`
+- ## noDevDependenciesDir: `["**/src/**"]`
 ```js
 //module-core/src/index.js
 import webpack from 'webpack'; // X Failed
