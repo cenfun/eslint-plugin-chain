@@ -76,8 +76,8 @@ module.exports = {
         "max-params": ["error", 8],
         "max-statements": ["error", 50],
         "new-cap": ["error", {
-            "newIsCap": true,
             "capIsNew": false,
+            "newIsCap": true,
             "properties": true
         }],
         "no-alert": "error",
@@ -181,8 +181,8 @@ module.exports = {
         "space-before-blocks": ["error", "always"],
         "space-before-function-paren": ["error", {
             "anonymous": "never",
-            "named": "never",
-            "asyncArrow": "always"
+            "asyncArrow": "always",
+            "named": "never"
         }],
         "space-in-parens": "error",
         "space-infix-ops": ["error", {
