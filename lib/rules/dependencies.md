@@ -12,6 +12,23 @@ Auto detection closest parent `package.json` and workspace `package.json` if mon
 
 `noDevDependenciesDir`: devDependencies limit for option `noUnlisted`. Defaults to `["**/src/**"]`.
 
+## Usage
+```js
+module.exports = {
+    plugins: [
+        "chain"
+    ],
+    rules: {
+        "chain/dependencies": ["error", {
+            "noSelfPackage": true,
+            "noUppercase": true,
+            "noUnlisted": true,
+            "noDevDependenciesDir": ["**/src/**"]
+        }]
+    }
+}
+```
+
 ## Rule Details
 
 Given the following Monorepo:

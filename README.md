@@ -23,12 +23,7 @@ module.exports = {
         "chain"
     ],
     rules: {
-        "chain/dependencies": ["error", {
-            "noSelfPackage": true,
-            "noUppercase": true,
-            "noUnlisted": true,
-            "noDevDependenciesDir": ["**/src/**"]
-        }]
+        "chain/dependencies": "error"
     }
 }
 ```
