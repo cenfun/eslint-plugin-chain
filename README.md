@@ -1,7 +1,7 @@
 # eslint-plugin-chain
 
 # Rules
-- [chain/dependencies](lib/rules/dependencies.md): dependencies related detection
+- [chain/dependencies](lib/rules/dependencies.md): dependencies related detection, noSelfPackage, noUppercase, noUnlisted
 
 
 ## Plugin Usage: recommended config
