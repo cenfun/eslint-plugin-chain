@@ -7,7 +7,6 @@ module.exports = {
         "amd": true,
         "commonjs": true,
         "es6": true,
-        "jquery": true,
         "mocha": true
     },
 
