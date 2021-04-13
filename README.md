@@ -27,3 +27,8 @@ module.exports = {
     }
 }
 ```
+
+## Changelog
+
++ 1.0.3
+    * fixed log issue
