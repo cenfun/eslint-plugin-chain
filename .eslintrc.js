@@ -82,7 +82,7 @@ module.exports = {
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-confusing-arrow": "error",
-        "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+        "no-console": "off",
         "no-constant-condition": ["error", {
             "checkLoops": false
         }],
@@ -133,6 +133,7 @@ module.exports = {
                 "multiline": true
             },
             "ObjectExpression": {
+                "consistent": true,
                 "minProperties": 1,
                 "multiline": true
             },
