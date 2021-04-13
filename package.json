@@ -4,6 +4,9 @@
   "description": "eslint-plugin-chain",
   "main": "lib/index.js",
   "scripts": {},
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cenfun/eslint-plugin-chain.git"
