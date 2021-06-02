@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-chain",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "eslint-plugin-chain",
   "main": "lib/index.js",
   "scripts": {},
@@ -13,13 +13,13 @@
   },
   "homepage": "https://github.com/cenfun/eslint-plugin-chain#readme",
   "dependencies": {
-    "eslint-module-utils": "^2.6.0",
-    "flatdep": "^1.1.5",
+    "eslint-module-utils": "^2.6.1",
+    "flatdep": "^1.1.6",
     "ignore": "^5.1.8",
-    "is-builtin-module": "^3.0.0",
+    "is-builtin-module": "^3.1.0",
     "json5": "^2.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.24.0"
+    "eslint": "^7.27.0"
   }
 }

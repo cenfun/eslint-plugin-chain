@@ -30,5 +30,8 @@ module.exports = {
 
 ## Changelog
 
++ 1.0.4
+    * fixed dependencies issue
+
 + 1.0.3
     * fixed log issue
