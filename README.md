@@ -30,5 +30,8 @@ module.exports = {
 
 ## Changelog
 
++ 2.0.0
+    * remove noDevDependencies
+
 + 1.0.3
     * fixed log issue

@@ -1,25 +1,23 @@
 {
-  "name": "eslint-plugin-chain",
-  "version": "1.0.3",
-  "description": "eslint-plugin-chain",
-  "main": "lib/index.js",
-  "scripts": {},
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cenfun/eslint-plugin-chain.git"
-  },
-  "homepage": "https://github.com/cenfun/eslint-plugin-chain#readme",
-  "dependencies": {
-    "eslint-module-utils": "^2.6.0",
-    "flatdep": "^1.1.5",
-    "ignore": "^5.1.8",
-    "is-builtin-module": "^3.0.0",
-    "json5": "^2.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.24.0"
-  }
+    "name": "eslint-plugin-chain",
+    "version": "2.0.0",
+    "description": "eslint-plugin-chain",
+    "main": "lib/index.js",
+    "scripts": {},
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/eslint-plugin-chain.git"
+    },
+    "homepage": "https://github.com/cenfun/eslint-plugin-chain#readme",
+    "dependencies": {
+        "eslint-module-utils": "^2.7.1",
+        "flatdep": "^1.1.9",
+        "is-builtin-module": "^3.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.0"
+    }
 }

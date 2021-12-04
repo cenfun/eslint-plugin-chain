@@ -10,8 +10,6 @@ Auto detection closest parent `package.json` and workspace `package.json` if mon
 
 `noUnlisted`: Detection module be listed in dependencies. Defaults to `true`.
 
-`noDevDependenciesDir`: devDependencies limit for option `noUnlisted`. Defaults to `["**/src/**"]`.
-
 ## Usage
 ```js
 module.exports = {
@@ -22,8 +20,7 @@ module.exports = {
         "chain/dependencies": ["error", {
             "noSelfPackage": true,
             "noUppercase": true,
-            "noUnlisted": true,
-            "noDevDependenciesDir": ["**/src/**"]
+            "noUnlisted": true
         }]
     }
 }
@@ -125,13 +122,4 @@ import axios from 'axios'; // X Failed
 import d3 from 'd3'; // ✔ Passed
 import Core from 'module-core'; // ✔ Passed
 import Vue from 'vue'; // ✔ Passed, vue listed in module-core
-```
-
-- ## noDevDependenciesDir: `["**/src/**"]`
-```js
-//module-core/src/index.js
-import webpack from 'webpack'; // X Failed
-
-//module-core/test/test.js
-import webpack from 'webpack'; // ✔ Passed
 ```
